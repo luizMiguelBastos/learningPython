@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "cliente": "Miguel",
+    "valor": 150,
+    "status": "pago"
+  },
+  {
+    "id": 2,
+    "cliente": "Lucas",
+    "valor": 100,
+    "status": "pendente"
+  },
+  {
+    "id": 3,
+    "cliente": "Hernandes",
+    "valor": 100,
+    "status": "cancelado"
+  }
+]
