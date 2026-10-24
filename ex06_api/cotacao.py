@@ -16,12 +16,16 @@ def converter(reais, cotacao):
     valor_convertido = reais / dolar
     return valor_convertido
 
-cotacao_atual = buscar_cotacao()
-valor = converter(100, cotacao_atual)
-print(round(valor, 2))
-print(cotacao_atual['data'], cotacao_atual['valor'])
-print(cotacao_atual)
-try:
-    converter(0, cotacao_atual)
-except ValueError as e:
-    print(e)
+if __name__ == '__main__':
+    cotacao_atual = buscar_cotacao()
+    valor = converter(100, cotacao_atual)
+    print(round(valor, 2))
+    print(cotacao_atual['data'], cotacao_atual['valor'])
+    print(cotacao_atual)
+    try:
+        converter(0, cotacao_atual)
+    except ValueError as e:
+        print(e)
+
+
+
